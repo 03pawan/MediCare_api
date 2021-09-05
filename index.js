@@ -1,16 +1,15 @@
-var express = require('express'); // requre the express framework
+var express = require('express'); 
 var app = express();
-var fs = require('fs'); //require file system object
+var fs = require('fs'); 
 
-// Endpoint to Get a list of users
+
 app.get('/', function (req, res) {
     fs.readFile(__dirname + "/data.json", 'utf8', function (err, data) {
 
-        res.end(data); // you can also use res.send()
+        res.end(data); 
     });
 })
 
-// Create a server to listen at port 8080
 var server = app.listen(3000, function () {
     var host = server.address().address
     var port = server.address().port
