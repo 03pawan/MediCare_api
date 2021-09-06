@@ -54,6 +54,16 @@
             "id": "k",
             "label": "Services",
             "type": "string"
+        },
+        {
+            "id": "l",
+            "label": "Price",
+            "type": "number"
+        },
+        {
+            "id": "m",
+            "label": "Rating",
+            "type": "number"
         }
     ],
     "data": [
